@@ -1,11 +1,11 @@
 /*NAVBAR*/
 
-.my_logo{
+nav .my_logo{
     width: 50px;
 }
 
-.my_test::placeholder {
-    color: red;
+nav .my_search::placeholder {
+    color: black;
     opacity: 0.5;
 }
 
