@@ -4,4 +4,9 @@
     width: 50px;
 }
 
+.my_test::placeholder {
+    color: red;
+    opacity: 0.5;
+}
+
 /*DASHBOARD*/
