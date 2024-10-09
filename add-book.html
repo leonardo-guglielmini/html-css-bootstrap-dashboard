@@ -46,7 +46,7 @@
                         <form>
                             <div class="mb-3">
                                 <label for="bookAuthorName" class="form-label">Nome Autore</label>
-                                <input type="text" class="form-control" id="bookAuthorName" placeholder="Inserisci il nome dell'autore">
+                                <input type="text" class="form-control" id="bookAuthorName" placeholder="Inserisci il nome dell'autore" name="bookAuthorName">
                             </div>
                         </form>
                     </div>
@@ -54,7 +54,7 @@
                         <form>
                             <div class="mb-3">
                                 <label for="bookAuthorSurname" class="form-label">Cognome Autore</label>
-                                <input type="text" class="form-control" id="bookAuthorSurname" placeholder="Inserisci il cognome dell'autore">
+                                <input type="text" class="form-control" id="bookAuthorSurname" placeholder="Inserisci il cognome dell'autore" name="bookAuthorSurname">
                             </div>
                         </form>
                     </div>
@@ -62,21 +62,21 @@
                         <form>
                             <div class="mb-3">
                                 <label for="bookTitle" class="form-label">Titolo</label>
-                                <input type="text" class="form-control" id="bookTitle" placeholder="Inserisci il titolo del libro" aria-describedby="bookTitleItalian">
+                                <input type="text" class="form-control" id="bookTitle" placeholder="Inserisci il titolo del libro" name="bookTitle" aria-describedby="bookTitleItalian">
                                 <div id="bookTitleItalian" class="form-text">Titolo della versione italiana</div>
                             </div>
                         </form>
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-12 col-xxl-4 mb-3">
                         <label for="bookGenre" class="form-label">Genere</label>
-                        <select class="form-select" aria-label="bookGenre" id="bookGenre">
+                        <select class="form-select" aria-label="bookGenre" id="bookGenre" name="bookGenre">
                             <option selected>Scegli il genere</option>
                             <option value="1">Avventura</option>
                             <option value="2">Azione</option>
                             <option value="3">Fantasy</option>
                         </select>
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-12 col-xxl-4">
                         <form>
                             <div class="mb-3">
                                 <label for="bookYearPublish" class="form-label">Anno di Pubblicazione</label>
@@ -86,23 +86,33 @@
                                 id="bookYearPublish" 
                                 onfocus="(this.type='date')" 
                                 onblur="(this.type='text')" 
-                                placeholder="Inserisci l'anno" 
+                                placeholder="Inserisci l'anno"
+                                name="bookYearPublish"
                                 >
                             </div>
                         </form>
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-12 col-xxl-4">
                         <div class="mb-3">
                             <label for="bookISBN" class="form-label">ISBN#</label>
-                            <input type="text" class="form-control" id="bookISBN" placeholder="Inserisci il codice ISBN#">
+                            <input type="text" class="form-control" id="bookISBN" placeholder="Inserisci il codice ISBN#" name="bookISBN">
                         </div>
                     </div>
                     <hr class="my-4">
                     <div class="col-12">
                         <div class="mb-3">
                             <label for="noteArea" class="form-label">Note</label>
-                            <textarea class="form-control" id="noteArea" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+                            <textarea class="form-control" id="noteArea" rows="3" placeholder="Inserisci eventuali note sul libro" name="bookNote"></textarea>
                         </div>
+                    </div>
+                    <div class="col-12 mt-2"> 
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="bookAlsoDigital" name="bookAlsoDigital">
+                            <label class="form-check-label" for="bookAlsoDigital">Disponibile anche in digitale</label>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <button class="btn btn-primary" type="submit">Aggiungi libro</button>
                     </div>
                 </div>
             </div>
